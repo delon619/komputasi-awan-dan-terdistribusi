@@ -2,16 +2,9 @@
 
 > Isi jurnal ini selama proses diskusi berlangsung, bukan ditulis ulang rapi di akhir. Tulis dengan gaya bebas — poin diskusi, kebuntuan, perubahan pikiran.
 
-## [Tanggal diskusi 1]
-- Peserta: [nama-nama yang hadir]
-- Poin diskusi: ...
-- Perbedaan pendapat (jika ada): ...
-
-## [Tanggal diskusi 2]
-- ...
-
-## Review Silang
-- [Nama] mengomentari analisis [Nama lain]: ...
+## [Tanggal 22/09/2026]
+- Peserta: 1. delon 2. steven
+- Poin diskusi: pitfall yang digunakan mencangkup network is reliable, latency is zero dan tightly coupled monolith
 
 ## Log Penggunaan AI (Level 2)
 
