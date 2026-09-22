@@ -4,8 +4,8 @@
 
 | Nama | NIM | Kontribusi |
 |---|---|---|
-| [nama 1] | [nim] | [pitfall/bagian yang dikerjakan] |
-| [nama 2] | [nim] | [pitfall/bagian yang dikerjakan] |
+| [Delon] | [103072400156] | [Arsitektur Monolitik dan Single Point of Failure] |
+| [Delon] | [103072400156] | [Double Payment] |
 | [nama 3] | [nim] | [pitfall/bagian yang dikerjakan] |
 
 ## Pitfall 1: [Arsitektur Monolitik dan Single Point of Failure] — ditulis oleh [Delon]
@@ -22,13 +22,7 @@
 
 ---
 
-## Pitfall 2: [nama pitfall] — ditulis oleh [nama]
-
-(ulangi struktur di atas)
-
----
-
-## Pitfall 3: [Double Payment] — ditulis oleh [Delon]
+## Pitfall 2: [Double Payment] — ditulis oleh [Delon]
 
 **Bukti di skenario:** Pada saat trafik sedang tinggi, sistem mengalami timeout dan respons yang lambat. Kondisi ini bisa membuat pengguna menekan tombol bayar lagi atau aplikasi melakukan retry secara otomatis tanpa mengecek terlebih dahulu apakah transaksi sebelumnya sudah berhasil.
 
@@ -39,6 +33,11 @@
 **Solusi desain awal:** FoodGo dapat menggunakan Idempotency Key, yaitu token unik yang dibuat untuk setiap transaksi. Ketika request pembayaran dikirim lagi dengan token yang sama, sistem akan mengenali bahwa transaksi tersebut sudah pernah diproses. Sistem cukup mengembalikan hasil transaksi sebelumnya tanpa memproses pembayaran untuk kedua kalinya.
 
 **Trade-off:** Penggunaan Idempotency Key membutuhkan penyimpanan tambahan untuk menyimpan token dan status transaksi. Data tersebut juga perlu memiliki waktu kedaluwarsa (TTL) agar penyimpanan tidak terus bertambah dan memenuhi memori.
+
+---
+
+## Pitfall 3: [nama pitfall] — ditulis oleh [nama]
+
 
 ---
 
