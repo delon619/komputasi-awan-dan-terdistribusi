@@ -63,3 +63,4 @@ Tugas ini memakai kebijakan **Level 2 (AI Assisted Idea Generation & Structuring
 
 Karena tugas ini murni analisis (rawan sekadar salin-tempel dari AI), verifikasi tambahan yang berlaku:
 - Setiap pitfall harus dikaitkan dengan **kalimat spesifik** dari skenario di atas — jawaban generik yang bisa dipakai untuk skenario apa saja akan dinilai rendah pada komponen kedalaman analisis.
+
