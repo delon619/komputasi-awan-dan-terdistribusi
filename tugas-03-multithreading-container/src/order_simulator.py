@@ -26,7 +26,9 @@ def process_order(order_id: int) -> None:
     global processed_count
 
     # Simulasikan kerja nyata (mis. validasi, hitung total harga)
-    time.sleep(random.uniform(0.001, 0.01))
+    with lock:
+        hasil = processed_count
+        time.sleep(random.uniform(0.001, 0.01))
 
     # TODO 2: Tambahkan increment `processed_count` DI SINI.
     # Langkah 1: jalankan dulu tanpa lock (increment biasa: processed_count += 1)
@@ -34,9 +36,8 @@ def process_order(order_id: int) -> None:
     # Langkah 2: bungkus increment dengan `with lock:` dan buktikan hasilnya
     #            selalu tepat NUM_ORDERS. Simpan bukti kedua kondisi ini
     #            di JURNAL.md / folder bukti/.
-    hasil = processed_count
-    time.sleep(random.uniform(0.001, 0.01))
-    processed_count = hasil + 1
+        processed_count = hasil + 1
+    
 
 
 def worker(order_ids: list) -> None:
