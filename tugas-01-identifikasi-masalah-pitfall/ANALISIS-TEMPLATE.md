@@ -53,4 +53,6 @@ Ketika pesanan dibuat, modul pesanan menerbitkan event OrderCreated ke broker da
 
 ## Kesimpulan Kelompok
 
-[Ringkasan: jika FoodGo memperbaiki ketiga pitfall ini, apa arsitektur yang disarankan secara garis besar? Kaitkan dengan Tugas 2.]
+Untuk mengatasi tiga pitfall utama, yaitu Single Point of Failure, double payment, dan masalah latency, FoodGo perlu mengubah arsitektur monolitik menjadi sistem yang lebih decoupled dan resilient.
+
+Solusinya adalah menggunakan kombinasi Service-Oriented Architecture (SOA) dan Publish-Subscribe (Pub-Sub). SOA memisahkan sistem menjadi beberapa service, sedangkan Pub-Sub mengurangi ketergantungan komunikasi langsung antar-service.
